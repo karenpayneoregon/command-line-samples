@@ -8,6 +8,10 @@ Included in this repository are console, dotnet tool and windows form projects u
 
 Note myage is a simply examples which accepts two dates and calcutates a person's age using the same code pattern used in the plain old console code samples.
 
+`-f` or `--from` for earlier date and `-t` or `--to` for later date.
+
+![img](assets/tool.png)
+
 ## Points of interest
 
 - Completely OOP centric code, not procedural, clean and easy to read
