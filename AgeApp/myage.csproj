@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>Get person's age</Description>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<LangVersion>9</LangVersion>
+		<Nullable>Enable</Nullable>
+		<RollForward>LatestMajor</RollForward>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>None</Copyright>
+		<Authors>Karen Payne</Authors>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>myage</ToolCommandName>
+		<PackageOutputPath>./nupkg</PackageOutputPath>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<RepositoryUrl>https://github.com/karenpayneoregon/command-line-samples</RepositoryUrl>
+	</PropertyGroup>
+
+	<!-- 
+    To pack correctly
+    dotnet pack /p:ContinuousIntegrationBuild=true
+  -->
+	<ItemGroup>
+		<PackageReference Include="CommandLineParser" Version="2.8.0" />
+	</ItemGroup>
+</Project>

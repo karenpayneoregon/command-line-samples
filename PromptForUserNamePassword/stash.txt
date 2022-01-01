@@ -1,0 +1,80 @@
+﻿Local functions
+
+https://stackoverflow.com/questions/40943117/local-function-vs-lambda-c-sharp-7-0
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+namespace PromptForUserNamePassword.Classes
+{
+    /// <summary>
+    /// Mocked information that would come from perhaps
+    /// a database, encrypted file etc.
+    /// </summary>
+    public class Secrets
+    {
+        /// <summary>
+        /// User name and password which are their first and last names
+        /// keys are case insensitive, in real world we would be case sensitive
+        /// </summary>
+        /// <returns></returns>
+        public static Dictionary<string, string> UsersInformation() =>
+            new(StringComparer.InvariantCultureIgnoreCase)
+            {
+                { "karen", "payne" },
+                { "vincent", "buchheitt" },
+                { "amelia", "dinh" },
+                { "garen", "porter" },
+                { "lisa", "smith-burham" },
+                { "james", "bennett" },
+                { "yelena", "galante" },
+                { "francis", "guarnes" },
+                { "dino", "guevara" },
+                { "bill", "rickman" },
+                { "bick", "vu" },
+                { "fred", "wenger" }
+            };
+        }
+}
+
+
+
+
+
+
+
+
+
+SET HOST ENVIRONMENT IN ASP.NET CORE USING COMMAND LINE ARGUMENTS
+https://www.koderdojo.com/blog/set-host-environment-in-asp-net-core-using-command-line-arguments
+
+Command Line Parsing in .NET Core using Microsoft.Extensions.Configuration. CommandLine
+https://robor78.wordpress.com/2020/02/18/command-line-parsing-in-net-core-using-microsoft-extensions-configuration-commandline/
+
+Command Line Parser on .NET5
+https://devblogs.microsoft.com/ifdef-windows/command-line-parser-on-net5/
+
+CommandLineConfigurationExtensions.AddCommandLine Method
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.commandlineconfigurationextensions.addcommandline?view=dotnet-plat-ext-6.0#Microsoft_Extensions_Configuration_CommandLineConfigurationExtensions_AddCommandLine_Microsoft_Extensions_Configuration_IConfigurationBuilder_System_Action_Microsoft_Extensions_Configuration_CommandLine_CommandLineConfigurationSource__
+
+https://github.com/commandlineparser/commandline/wiki/How-To
+<AssemblyName>Karen code sample 1</AssemblyName>
+
+-m RegistrationType1,RegistrationType2
+
+--username yelena -p galante --verbose
+
+https://stackoverflow.com/questions/20629556/command-line-parser-library-parsing-a-list-of-enums
+
+
+Command-line applications typically accept arguments and options, and expose a --help page describing them. Parsing those arguments and options is a repetitive task that .NET provides little help for out of the box, beyond the string[] args argument to main. Giacomo Stelluti Scala‘s Command Line Parser Library offers CLR applications a clean and concise API for manipulating command line arguments and related tasks, such as defining switches, options and verb commands. It allows you to display a help screen with a high degree of customization and a simple way to report syntax errors to the end user. Everything that is boring and repetitive about parsing command line arguments is delegated to the library, letting developers concentrate on core logic. 
