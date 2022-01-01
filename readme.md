@@ -1,8 +1,12 @@
-# Parsing command line arguments
+# C# Parsing command line arguments
 
 Learn how to work with arguments passed to an application using [CommandLineParser](https://github.com/commandlineparser/commandline) via NuGet [package](https://www.nuget.org/packages/CommandLineParser/2.8.0).
 
 There are plenty of code samples on the web that show how to use this library but none have complete working code while this repository has several code samples to make it easy to learn.
+
+Included in this repository are console, dotnet tool and windows form projects using CommandLineParser library.
+
+Note myage is a simply examples which accepts two dates and calcutates a person's age using the same code pattern used in the plain old console code samples.
 
 ## Points of interest
 

@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using CommandLine;
 using CommandLine.Text;
-using myage.Classes;
 
-namespace PromptForUserNamePassword.Classes
+namespace myage.Classes
 {
     public class CommandLineHelp
     {
@@ -18,7 +16,7 @@ namespace PromptForUserNamePassword.Classes
             var help = HelpText.AutoBuild(result, helpText =>
             {
                 helpText.AdditionalNewLineAfterOption = false;
-                helpText.Heading = "Fictitious utility";
+                helpText.Heading = "Get your age utility";
                 helpText.Copyright = $"Copyright (c) {DateTime.Now.Year} some team";
 
                 return HelpText.DefaultParsingErrorsHandler(result, helpText);
@@ -26,8 +24,7 @@ namespace PromptForUserNamePassword.Classes
             }, e => e);
 
             Console.WriteLine(help);
-            Console.ReadLine();
-            Environment.Exit(-1);
+            Environment.Exit(0);
         }
 
         /// <summary>

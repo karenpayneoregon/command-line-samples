@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using CommandLine;
 
 namespace myage.Classes
@@ -11,8 +10,6 @@ namespace myage.Classes
 
         [Option('t', "to", Required = false, HelpText = "To date")]
         public DateTime To { get; set; }
-
-
 
         [Option(Default = false, HelpText = "Prints all messages to standard output.")]
         public bool Verbose { get; set; }

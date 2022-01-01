@@ -7,7 +7,7 @@
 		<LangVersion>9</LangVersion>
 		<Nullable>Enable</Nullable>
 		<RollForward>LatestMajor</RollForward>
-		<VersionPrefix>1.0.0</VersionPrefix>
+		<VersionPrefix>1.0.1</VersionPrefix>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>None</Copyright>
 		<Authors>Karen Payne</Authors>
@@ -16,6 +16,16 @@
 		<PackageOutputPath>./nupkg</PackageOutputPath>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<RepositoryUrl>https://github.com/karenpayneoregon/command-line-samples</RepositoryUrl>
+		<AssemblyVersion>1.0.1.1</AssemblyVersion>
+		<FileVersion>1.0.0.1</FileVersion>
+		<PackageIcon>age.png</PackageIcon>
+		<PackageIconUrl />
+		<PackageProjectUrl>https://github.com/karenpayneoregon/command-line-samples</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>csharp dotnet-tool net5</PackageTags>
+		<PackageReleaseNotes>minor updates</PackageReleaseNotes>
+		<Version>1.1.2</Version>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
 
 	<!-- 
@@ -24,5 +34,11 @@
   -->
 	<ItemGroup>
 		<PackageReference Include="CommandLineParser" Version="2.8.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="assets\age.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
 	</ItemGroup>
 </Project>
