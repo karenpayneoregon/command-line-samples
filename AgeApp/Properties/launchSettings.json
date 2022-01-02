@@ -1,8 +1,7 @@
 {
   "profiles": {
     "myage": {
-      "commandName": "Project",
-      "commandLineArgs": "--from 9/24/1956"
+      "commandName": "Project"
     }
   }
 }

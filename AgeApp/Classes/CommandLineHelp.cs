@@ -17,8 +17,8 @@ namespace myage.Classes
             {
                 helpText.AdditionalNewLineAfterOption = false;
                 helpText.Heading = "Get your age utility";
-                helpText.Copyright = $"Copyright (c) {DateTime.Now.Year} some team";
-
+                helpText.Copyright = $"Copyright (c) {DateTime.Now.Year} Karen Payne";
+                
                 return HelpText.DefaultParsingErrorsHandler(result, helpText);
 
             }, e => e);

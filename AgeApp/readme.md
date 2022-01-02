@@ -8,3 +8,19 @@ Uses NuGet CommandLineParser [package](https://www.nuget.org/packages/CommandLin
 Install globally `dotnet tool install -g myage` and `dotnet tool uninstall myage -g` to uninstall
 
 ![img](../assets/tool.png)
+
+## NuGet package
+
+![Nuget](https://img.shields.io/nuget/v/myage?style=for-the-badge)
+
+### Installation
+
+```powershell
+dotnet tool install --global myage --version 1.1.2
+```
+
+### Updates
+
+```powershell
+dotnet tool update -g myage --no-cache
+
