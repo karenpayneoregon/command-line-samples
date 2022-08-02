@@ -69,6 +69,10 @@ If working with  .NET Core 2.1 SDK and later versions you can use the command li
 
 Example using [CommandLineParser](https://github.com/commandlineparser/commandline) is [dotnet-cleanup](https://github.com/sebnilsson/DotnetCleanup) and [quickup](https://github.com/Sergio0694/quickup).
 
+## List tools
+
+dotnet tool list -g
+
 # Copy rights
 
 There are several places in code that have a copy right, these are to show how to display a copy right and are to be considered just that. There are no copyrights on code provided.

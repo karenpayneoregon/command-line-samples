@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "checkocsmessagesequence": {
+      "commandName": "Project",
+      "commandLineArgs": "-u osc -p ocsdog --env Dev"
+    }
+  }
+}

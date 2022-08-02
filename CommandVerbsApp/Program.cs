@@ -14,7 +14,7 @@ namespace CommandVerbsApp
     {
         public static void Main()
         {
-            var line = new String('-', 40);
+            var line = new string('-', 40);
             Console.WriteLine("---show help for verbs ------");
             var args = "--help".Split();
             Start(args);
@@ -45,6 +45,7 @@ namespace CommandVerbsApp
             Parser.Default.ParseArguments(args, types)
                 .WithParsed(Run)
                 .WithNotParsed(HandleErrors);
+            Console.ReadLine();
         }
         //load all Verb types using Reflection
         static Type[] LoadVerbs() =>

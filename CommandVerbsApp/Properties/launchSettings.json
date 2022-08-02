@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandVerbsApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--add karen"
+    }
+  }
+}
