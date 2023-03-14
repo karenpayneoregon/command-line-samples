@@ -11,7 +11,11 @@ namespace MarkOfTheWeb
         {
             var title = new HeadingInfo(programName: "Mark of the web remover", version: "1.0.0");
             Debug.WriteLine(title);
-            CommandLineHelp.ParseArguments(args);
+            if (args.Length >0)
+            {
+                CommandLineHelp.ParseArguments(args);
+            }
+            
         }
     }
 }

@@ -2,7 +2,7 @@
   "profiles": {
     "FileChunking": {
       "commandName": "Project",
-      "commandLineArgs": "--file C:\\OED\\Chunking\\LargePeople.txt --base person --size 1000 --dir C:\\OED\\Chunking\\Done"
+      "commandLineArgs": "--file C:\\OED\\Chunking\\LargePeople.txt --base person --size 1000 --dir C:\\OED\\Chunking\\Done\\One"
     }
   }
 }

@@ -24,7 +24,8 @@ namespace MarkOfTheWeb.Classes
 
             }, e => e);
 
-            Debug.WriteLine(help);
+            Console.WriteLine(help);
+            Console.ReadLine();
             Environment.Exit(-1);
         }
 
@@ -40,6 +41,7 @@ namespace MarkOfTheWeb.Classes
 
             results.WithParsed<CommandLineOptions>(Operations.RemoveMarkOfWeb).WithNotParsed(errors =>
                 CommandLineHelp.DisplayHelp(results, errors));
+            Console.ReadLine();
 
         }
     }
