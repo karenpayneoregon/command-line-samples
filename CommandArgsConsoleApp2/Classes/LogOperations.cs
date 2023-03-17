@@ -1,31 +1,14 @@
 ﻿using System.Text.Json;
 using CombinedConfigDemo.Models;
-using CommandArgsConsoleApp1.Data;
+using CommandArgsConsoleApp2.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Serilog;
-using Spectre.Console;
 
-namespace CommandArgsConsoleApp1.Classes;
+namespace CommandArgsConsoleApp2.Classes;
 
 internal class LogOperations
 {
 
-    public static void Logging(IConfigurationRoot config)
-    {
-        var logOption = config["log"];
-
-        if (logOption is not null)
-        {
-            if (bool.TryParse(config["log"], out var useLogging))
-            {
-                if (useLogging)
-                {
-                    LogOperations.CreateSomeLogs();
-                }
-            }
-        }
-    }
     /// <summary>
     /// Create various types of log entries
     /// </summary>

@@ -38,30 +38,24 @@ internal class MainOperations
             {
                 Console.WriteLine($"Use {environment} environment");
 
-                var items = Configurations.GetConfigurationRoot1(environment.ToString());
+                List<KeyValuePair<string, string>> settings = Configurations.GetConfigurationRoot1(environment.ToString());
 
-                Console.WriteLine(new string('-', 50));
-                
-                foreach (var pair in items)
-                {
-                    Console.WriteLine($"{pair.Key}  {pair.Value}");
-                }
+                //Console.WriteLine(new string('-', 50));
+                //foreach (var (key, value) in settings)
+                //{
+                //    Console.WriteLine($"{key}  {value}");
+                //}
+                //Console.WriteLine(new string('-', 50));
 
-                Console.WriteLine(new string('-', 50));
+                Console.WriteLine($"                         Log database = {settings.FirstOrDefault(x => 
+                    x.Key == "ConnectionStrings:LogDatabase").Value}");
 
-                Console.WriteLine(config.GetSection("ConnectionStrings")["LogDatabase"]);
-                Console.WriteLine(config.GetSection("ConnectionStrings")["DatabaseConnection"]);
-                Console.WriteLine(config.GetSection("Serilog:SinkOptions")["batchPeriod"]);
-                Console.WriteLine(config.GetSection("Serilog:ColumnOptions:timeStamp")["convertToUtc"]);
+                Console.WriteLine($"      Serilog:SinkOptions:batchPeriod = {settings.FirstOrDefault(x => 
+                    x.Key == "Serilog:SinkOptions:batchPeriod").Value}");
 
-                Console.WriteLine();
+                Console.WriteLine($"Serilog:SinkOptions:batchPostingLimit = {settings.FirstOrDefault(x => 
+                    x.Key == "Serilog:SinkOptions:batchPostingLimit").Value}");
 
-                var sinkOptions = config.GetSection("Serilog:SinkOptions").GetChildren();
-
-                foreach (var section in sinkOptions)
-                {
-                    Console.WriteLine($"{section.Key,-25}{section.Value}");
-                }
             }
         }
         else

@@ -34,6 +34,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetDirFileCount", "GetDirFi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerDetails", "..\console-apps\ComputerDetails\ComputerDetails.csproj", "{BE029EE5-FF76-44A2-A5AB-BF171873E095}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandArgsConsoleApp2", "CommandArgsConsoleApp2\CommandArgsConsoleApp2.csproj", "{6E361296-C12B-4076-8AF1-579E01FCD2FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E361296-C12B-4076-8AF1-579E01FCD2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E361296-C12B-4076-8AF1-579E01FCD2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E361296-C12B-4076-8AF1-579E01FCD2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E361296-C12B-4076-8AF1-579E01FCD2FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{F34CA016-48A9-4569-9D7F-942CDDF39E35} = {DAEFA1C4-CDA7-4C51-800E-FA986047E36E}
 		{331B1854-C424-4B6C-9CC8-6A626BEFC3D6} = {C19860CE-3CC3-4B39-B4ED-7DEFE103B8B8}
 		{BE029EE5-FF76-44A2-A5AB-BF171873E095} = {C19860CE-3CC3-4B39-B4ED-7DEFE103B8B8}
+		{6E361296-C12B-4076-8AF1-579E01FCD2FD} = {C19860CE-3CC3-4B39-B4ED-7DEFE103B8B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {442AE2C8-2DEE-49EA-B824-28216CBD4E69}
