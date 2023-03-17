@@ -4,7 +4,12 @@ using Spectre.Console;
 namespace CommandArgsConsoleApp1.Classes;
 internal class MainOperations
 {
-    public static void CheckUserName(IConfigurationRoot config)
+    /// <summary>
+    /// Check if user name has been passed via command line argument and
+    /// if so display the name.
+    /// </summary>
+    /// <param name="config"></param>
+    public static void UserNameCheck(IConfigurationRoot config)
     {
         AnsiConsole.MarkupLine("[cyan]Checking user name from command line[/]");
         var user = config["username"];
@@ -20,7 +25,7 @@ internal class MainOperations
     }
 
     /// <summary>
-    /// Demo for reading from an environment appsettings file
+    /// Demo for reading from an environment appsettings file  
     /// </summary>
     /// <param name="config">IConfigurationRoot</param>
     public static void ViewEnvironment(IConfigurationRoot config)

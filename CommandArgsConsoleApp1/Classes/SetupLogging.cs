@@ -17,7 +17,7 @@ internal class SetupLogging
             const string schemaName = "dbo";
             const string tableName = "LogEvents";
 
-            var configuration = new ConfigurationBuilder()
+            IConfigurationRoot configuration = new ConfigurationBuilder()
                 .AddJsonFile($"appsettings.{environment}.json", optional: true, reloadOnChange: true)
                 .Build();
 

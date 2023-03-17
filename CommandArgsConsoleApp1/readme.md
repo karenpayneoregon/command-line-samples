@@ -1,33 +1,9 @@
 ﻿# About
 
-Simple example for using `Microsoft.Extensions.Configuration.CommandLine`
+This code sample demonstrates
 
-In this example there is a Dictionary defining acceptable argument with short and long (alias) names.
-
-```csharp
-var switchMappings = new Dictionary<string, string>()
-{
-    { "-username", "username" },
-    { "--username", "username" },
-    { "-password", "password" },
-    { "--password", "password" }
-};
-var builder = new ConfigurationBuilder();
-builder.AddCommandLine(args, switchMappings);
-
-var config = builder.Build();
-```
-
-Try it out via PowerShell
-
-```
-dotnet run --username Karen --password @ert^1opc
-```
-Note that in ASP.NET Core you can set the environment e.g.
-
-```
-dotnet run --environment "Staging"
-```
+- Passing an command parameter for a user name
+- Uses `IConfigurationRoot` code to read from an `appsettings.json` dependent on a command line parameter for the environment, Development, Staging, Production.
 
 
-![img](../assets/figure7.png)
+![Figure](assets/figure.png)
