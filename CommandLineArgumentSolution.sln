@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet tools", "dotnet tool
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetDirFileCount", "GetDirFileCount\GetDirFileCount.csproj", "{331B1854-C424-4B6C-9CC8-6A626BEFC3D6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerDetails", "..\console-apps\ComputerDetails\ComputerDetails.csproj", "{BE029EE5-FF76-44A2-A5AB-BF171873E095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{331B1854-C424-4B6C-9CC8-6A626BEFC3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{331B1854-C424-4B6C-9CC8-6A626BEFC3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{331B1854-C424-4B6C-9CC8-6A626BEFC3D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE029EE5-FF76-44A2-A5AB-BF171873E095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{C5B3BC7C-54C3-4807-A4BA-BFE7980F0F37} = {C19860CE-3CC3-4B39-B4ED-7DEFE103B8B8}
 		{F34CA016-48A9-4569-9D7F-942CDDF39E35} = {DAEFA1C4-CDA7-4C51-800E-FA986047E36E}
 		{331B1854-C424-4B6C-9CC8-6A626BEFC3D6} = {C19860CE-3CC3-4B39-B4ED-7DEFE103B8B8}
+		{BE029EE5-FF76-44A2-A5AB-BF171873E095} = {C19860CE-3CC3-4B39-B4ED-7DEFE103B8B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {442AE2C8-2DEE-49EA-B824-28216CBD4E69}

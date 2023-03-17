@@ -16,6 +16,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Serilog.Sinks.MSSqlServer" Version="6.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+		<PackageReference Include="Spectre.Console" Version="0.44.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Update="appsettings.article.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
